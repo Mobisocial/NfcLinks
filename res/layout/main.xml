@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+<TextView  
+	android:id="@+id/welcome"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text="Choose a link then touch your phone to share it."
+    android:textSize="24dip"
+    android:layout_alignParentTop="true"
+    android:background="#333355"
+    />
+    
+<TextView android:id="@+id/selection"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:textSize="24dip"
+    android:text="No link selected."
+    android:layout_alignParentBottom="true"
+    android:background="#333355"
+/>
+    
+<ListView  
+    android:id="@android:id/list"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:layout_below="@id/welcome"
+    android:layout_above="@id/selection"
+    />
+<TextView android:id="@android:id/empty"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="No links."
+    />
+</RelativeLayout>
